@@ -1,0 +1,195 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.btn {
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  ;
+}
+
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  transition: 400ms;
+  color: beige;
+}
+
+
+.forms {
+  padding: 20px;
+  height: 600px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: blue; */
+  border: 5px;
+  border-style: double;
+}
+
+
+#to-Showe {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 500px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  /* border-style: double; */
+
+}
+
+
+
+/* Webkit browsers */
+#to-Showe::-webkit-scrollbar {
+  width: none;
+}
+
+#to-Showe::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 94, 235);
+  border-radius: 4px;
+}
+
+/* Firefox */
+#to-Showe {
+  scrollbar-width: none;
+  scrollbar-color: rgb(34, 31, 34) transparent;
+}
+
+
+
+#to-Add {
+  height: 200px;
+}
+
+
+.inpt {
+  border: 2px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 11px;
+  border-style: groove;
+  width: 80%;
+  height: 35px;
+  min-height: 35px;
+}
+
+.inpt:hover {
+  transform: scale(1.07);
+  transition: 500ms;
+}
+
+.inpt:focus {
+  transform: scale(1.07);
+  border-color: rgb(141, 0, 241);
+
+}
+
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  /* veya belirli bir genişlik */
+}
+
+/* ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+} */
+
+
+.todo-Element {
+  color: blanchedalmond;
+  margin: 5px;
+  font-weight: bolder; /* sadece bunu bırak */
+  padding: 5px;
+  border: 1px solid rgb(104, 42, 54);
+  border-radius: 7px;
+  min-width: 300px;
+  max-width: 500px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+.todo-text {
+  flex-grow: 1;
+}
+
+.fa-trash {
+  cursor: pointer;
+  color: rgb(62, 61, 61);
+}
+
+.fa-trash:hover {
+  color: red;
+  transition: 250ms;
+}
+
+
+i {
+  margin-left: 10px;
+}
+
+
+li:hover {
+  transform: scaleX(1.05);
+  transform-origin: left;
+  transition: 600ms;
+}
+
+
+
+.warn {
+  height: 40px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warning {
+  color: yellow;
+}
+
+.success {
+  color: green;
+}
+
+.issue {
+  color: red
+}
+
+.load {
+  color: purple;
+}
